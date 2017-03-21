@@ -47,9 +47,9 @@
   display: flex;
   }
 
- .menu2 li {
+ li.active {
+  background-image: url(../img/ola.png);
   display: block;
-  background: linear-gradient(to top #2e7ac4 #50afdc);
   width: 191px;
   height: 36px;
   }
@@ -59,14 +59,9 @@
   color: #60b5ed;
   }
 
-  .menu2 li:hover {
-    background-image: url(../img/ola.png);
-    height: 36px;
-    width: 191px;
-    }
-
-    .menu2 li p {
+      .menu2 li p {
       padding-top: 10px;
+      width: 191px;
     }
 
   .flag {
