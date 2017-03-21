@@ -48,39 +48,41 @@
   }
 
  .menu2 li {
-   display: block;
- background: linear-gradient(to top #2e7ac4 #50afdc);
- width: 191px;
- height: 36px;
+  display: block;
+  background: linear-gradient(to top #2e7ac4 #50afdc);
+  width: 191px;
+  height: 36px;
   }
 
 .menu2 a {
-  display: block;
   padding: 9px;
+  color: #60b5ed;
   }
 
   .menu2 li:hover {
     background-image: url(../img/ola.png);
     height: 36px;
     width: 191px;
+    }
 
-  }
+    .menu2 li p {
+      padding-top: 10px;
+    }
 
-  li .flag::before {
+  .flag {
+  float: left;
   content: ' ';
   background-image: url(../img/flag.png);
   background-repeat: no-repeat;
   height: 36px;
-  width: 191px;
+  width: 30px;
+  margin-top: 5px;
   }
 
   .center {
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
-
     }
 
    .container1 {
