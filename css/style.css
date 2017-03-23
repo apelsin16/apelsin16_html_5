@@ -5,12 +5,18 @@
   visibility: hidden;
   }
 
+  body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-color: #60b5ed;
+    background-size: 100%;
+  }
+
 .wrapper {
-  background-image: url(../img/background.png);
-  background-repeat: no-repeat;
-  height: 1028px;
-  width: 1215px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
   }
 
 .header {
@@ -20,6 +26,7 @@
   height: 36px;
   width: inherit;
   flex-direction: row-reverse;
+  justify-content: flex-start;
   }
 
     .header ul {
@@ -55,12 +62,12 @@
   }
 
 .menu2 a {
-  padding: 9px;
+
   color: #60b5ed;
   }
 
       .menu2 li p {
-      padding-top: 10px;
+      /*padding-top: 10px;*/
       width: 191px;
     }
 
@@ -76,47 +83,54 @@
 
   .center {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     align-items: center;
+    justify-content: flex-end;
     }
 
    .container1 {
-     margin-top: 214px;
      font-size: 24px;
      color: white;
-     align-content: center;
      height: 62px;
      width: 560px;
      background-color: rgba(87, 87, 87, 0.6);
      margin-bottom: 3px;
      text-align: center;
-    }
+     flex-grow: 1;
+     }
 
-.container1 h1 {
-padding: 20px;
-}
+    .container1 h1 {
+      padding: 20px;
+      }
+
     .container2 {
       width: 560px;
       background-color: rgba(87, 87, 87, 0.6);
       align-content: center;
       color: white;
       text-align: center;
-    }
+      }
 
     .container2 a {
-        background-image: url(../img/button.png);
+      background-image: url(../img/button.png);
       display: block;
       height: 35px;
       width: 276px;
       margin: 36px 140px;
+
       }
-    .container2 li {
-      display: inline-block;
+  .container2 li {
+    display: inline-block;
     }
-  hr {
-    color: #666;
-    width: 122px;
-    box-shadow: 0 2px black;
+
+  fieldset {
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+        }
+
+  legend {
+    text-align: center;
     }
 
   input {
@@ -126,6 +140,12 @@ padding: 20px;
     width: 275px;
     border: 0;
   }
+
+  input[type="checkbox"] {
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    }
 
     button {
       background-image: url(../img/account.png);
@@ -141,11 +161,8 @@ padding: 20px;
       padding-top: 10px;
     }
 
-    .checkbox input {
-      width: 15px;
-    }
-
-    input:hover {
+    input:focus,
+    input:hover    {
       background-color: #1b5288;
       -webkit-box-shadow: 0px 0px 10px 5px rgba(123,179,232,1);
       -moz-box-shadow: 0px 0px 10px 5px rgba(123,179,232,1);
