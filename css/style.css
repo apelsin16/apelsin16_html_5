@@ -38,7 +38,8 @@
   }
 
     .header ul {
-    display: flex;
+     display: flex;
+      border-right: 1px solid #60b5ed;
     }
 
     .top_menu_left a {
@@ -48,8 +49,8 @@
     padding: 10px;
     }
 
-  .top_menu_left:last-child {
-    border-right: 1px solid #60b5ed;
+  .top_menu_left li {
+
   }
 
   .top_menu_left a:hover {
@@ -174,7 +175,12 @@
       color: white;
       font-size: 18px;
       text-decoration: none;
+      padding-top: 10px;
       }
+
+      .before::before {
+            border-right: 2px solid #1f3d73;
+        }
 
     .registration_form span {
       font-weight: 900;
@@ -185,11 +191,7 @@
     padding: 8px;
     }
 
-    .registration_form li:first-child {
-      border-right: 2px solid #1f3d73;
-    }
-
-  fieldset {
+      fieldset {
     /*border: 1 solid #666;*/
     border-left: none;
     border-bottom: none;
@@ -227,6 +229,8 @@
     .p {
       font-size: 10px;
       padding-top: 10px;
+      width: 300px;
+      margin: 0 auto;
     }
 
     input:focus,
